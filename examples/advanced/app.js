@@ -34,7 +34,7 @@ function exposeTemplates(req, res, next) {
         if (err) { return next(err); }
 
         // RegExp to remove the ".handlebars" extension from the template names.
-        var extRegex = new RegExp(hbs.extname + '$');
+        var extRegex = new RegExp(hbs.extName + '$');
 
         // Creates an array of templates which are exposed via
         // `res.locals.templates`.

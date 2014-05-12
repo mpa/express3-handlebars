@@ -125,7 +125,7 @@ Express3 Handlebars Change History
 0.2.1 (2013-02-04)
 ------------------
 
-* `extname`, `layoutsDir`, and `partialsDir` property values will now reference
+* `extName`, `layoutsDir`, and `partialsDir` property values will now reference
   the values on the prototype unless an `ExpressHandlebars` instance is
   constructed with config values for these properties.
 

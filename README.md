@@ -357,9 +357,9 @@ layout. This is overridden by a `layout` specified in the app or response
 `locals`. **Note:** A falsy value will render without a layout; e.g.,
 `res.render('home', {layout: false});`.
 
-#### `extname=".handlebars"`
+#### `extName=".handlebars"`
 The string name of the file extension used by the templates. This value should
-correspond with the `extname` under which this view engine is registered with
+correspond with the `extName` under which this view engine is registered with
 Express when calling `app.engine()`.
 
 The following example sets up an Express app to use `.hbs` as the file extension
@@ -371,7 +371,7 @@ var express = require('express'),
 
     app = express();
 
-app.engine('.hbs', exphbs({extname: '.hbs'}));
+app.engine('.hbs', exphbs({extName: '.hbs'}));
 app.set('view engine', '.hbs');
 ```
 
